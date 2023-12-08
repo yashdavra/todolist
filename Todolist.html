@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Todolist.css">
+    <title>Back End Development To-Do List</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Back End Development To-Do List</h1>
+        </header>
+        
+        <div id="taskContainer">
+            <div id="addTaskSection">
+                <input type="text" id="taskInput" placeholder="Add Task">
+                <input type="date" id="dueDate" placeholder="Due Date">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            
+            <div id="tasksSection">
+                <h2>Tasks</h2>
+                <div id="taskList">
+                    <ul id="tasksUl"></ul>
+                </div>
+            </div>
+            
+            <div id="completedTasksSection">
+                <h2>Completed Tasks</h2>
+                <div id="completedTaskList">
+                    <ul id="completedUl"></ul>
+                </div>
+            </div>
+            
+            <button onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+
+    <script src="Todolist1.js"></script>
+</body>
+</html>
